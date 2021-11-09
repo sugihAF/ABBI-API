@@ -8,7 +8,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 def init():
-    cred = credentials.Certificate(os.path.join(sys.path[0],r"questions\ayo-belajar-bahasa-isyarat-firebase-adminsdk-3nrjb-7e5e12761f.json"))
+    cred = credentials.Certificate("./ayo-belajar-bahasa-isyarat-firebase-adminsdk-3nrjb-7e5e12761f.json")
     firebase_admin.initialize_app(cred)
 
     # env = environ.Env()
