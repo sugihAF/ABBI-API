@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'style.css' %}">   
+</head>
+<body>
+    <div class="form_wrapper">
+    <div class="form_container">
+        <div class="title_container">
+        <h2>Input Question <br> Aplikasi Belajar Bahasa Isyarat</h2>
+        </div>
+        <div class="row clearfix">
+        <div class="">
+            <form action="{% url 'input_question' %}">
+            <div class="input_field"> <span><i aria-hidden="true"></i></span>
+                <input type="text" name="question" placeholder="Question" required />
+            </div>
+            <div class="input_field"> <span><i aria-hidden="true"></i></span>
+                <input type="text" name="answer" placeholder="Answer" required />
+            </div>
+            <div class="row clearfix">
+                <div class="col_half">
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                    <input type="text" name="option1" placeholder="Option 1" required />
+                </div>
+                </div>
+                <div class="col_half">
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                    <input type="text" name="option2" placeholder="Option 2" required />
+                </div>
+                </div>
+            </div>
+            <div class="row clearfix">
+                <div class="col_half">
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                    <input type="text" name="option3" placeholder="Option 3" required />
+                </div>
+                </div>
+                <div class="col_half">
+                <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
+                    <input type="text" name="option4" placeholder="Option 4" required />
+                </div>
+                </div>
+            </div>
+            <input class="button" type="submit" value="Submit Question" />
+            </form>
+        </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
